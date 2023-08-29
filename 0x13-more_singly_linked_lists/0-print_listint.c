@@ -2,26 +2,26 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * print_listint-counts the nodes in the linked list
+ * print_listint-root the nodes in the linked list
  * @h: head of the list
  * Return: the number of nodes
  */
-size_t print_listint(const listint_t *head)
+size_t print_listint(const listint_t *h)
 {
-	int counts;
+	int root;
 
-	if (head == NULL)
+	if (h == NULL)
 		return (0);
-	counts = 0;
-	while (head->next != NULL)
+	root = 0;
+	while (h->next != NULL)
 	{
-		if (head->new)
-			printf("%d\n", head->new);
-		counts++;
-		head = head->next;
+		if (h->n)
+			printf("%d\n", h->n);
+		root++;
+		h = h>next;
 	}
-	if (head->new)
-		printf("%d\n", head->new);
-	counts++;
-	return (counts);
+	if (h->new)
+		printf("%d\n", h->n);
+	root++;
+	return (root);
 }
