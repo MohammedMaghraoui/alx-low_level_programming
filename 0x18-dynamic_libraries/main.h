@@ -1,17 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_N
-
-#include <stdio.h>
-#include <stdlib.h>
-
-/**
- * _putchar - writes a character to stdout
- *
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+#ifndef __MAIN_H__
+#define __MAIN_H__
 
 int _putchar(char c);
 int _islower(int c);
@@ -34,4 +22,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif /*MAIN_H*/
+#endif
